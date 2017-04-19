@@ -148,7 +148,7 @@ void getEntropy(LPCWSTR wFolderPath)
 		} while (FindNextFile(fileHandle, &fileData));
 	}
 	
-	entropyCutoff = maxEntropy * 0.9;
+	entropyCutoff = ((maxEntropy - minEntropy) * 0.9) + minEntropy;
 
 	cout << endl << "Maximum Entropy Encountered : " << maxEntropy << endl;
 	cout << "Minimum Entropy Encountered : " << minEntropy << endl;
