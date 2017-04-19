@@ -189,8 +189,7 @@ void getEntropy(LPCWSTR wFolderPath)
 	cout << "Total DLL Files found : " << dllFilesCount << endl;
 	cout << endl << "Average Entropy of EXE files is : " << averageExeEntropy << endl;
 	cout << "Average Entropy of DLL files is : " << averageDllEntropy << endl;
-	cout << endl << "Average Entropy over both types : " << (totalDllEntropy + totalExeEntropy) /
-															(exeFilesCount + dllFilesCount) << endl;
+	cout << endl << "Average Entropy over both types : " << (totalDllEntropy + totalExeEntropy) / (exeFilesCount + dllFilesCount) << endl;
 }
 
 int main(int argc, char* argv[])
